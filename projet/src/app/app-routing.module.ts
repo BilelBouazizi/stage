@@ -8,7 +8,7 @@ const routes: Routes = [
     component: SearchComponent,
   },
   {
-    path: "result",
+    path: "result/:bookname",
     component: ResultComponent
   }
 ];

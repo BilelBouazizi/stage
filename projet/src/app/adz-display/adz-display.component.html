@@ -1,0 +1,15 @@
+<div>
+  <h3><span>Title: </span>{{" "}}<span>{{item.volumeInfo.title}}</span></h3>
+  <p><span>Published date: </span>{{" "}}<span>{{item.volumeInfo.publishedDate}}</span></p>
+  <p><span>Publisher: </span>{{" "}}<span>{{item.volumeInfo.publisher}}</span></p>
+  <p>Authors:</p>
+  <ul>
+    <li *ngFor="let author of item.volumeInfo.authors">{{author}}</li>
+  </ul>
+  <p>Categories:</p>
+  <ul>
+    <li *ngFor="let categorie of item.volumeInfo.categories">{{categorie}}</li>
+  </ul>
+  <p><span>Content version: </span>{{" "}}<span>{{item.volumeInfo.contentVersion}}</span></p>
+  <p><a href="{{item.selfLink}}">For more infos</a></p>
+</div>

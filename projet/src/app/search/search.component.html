@@ -1,4 +1,4 @@
 <div>
     <input type="search" [(ngModel)]="searchTxt" name="search" placeholder="search for books...">
-    <a routerLink="result" (click)="doSearch()">Search</a>
+    <button type="button" [routerLink]="['result', searchTxt]">Search</button>
 </div>
