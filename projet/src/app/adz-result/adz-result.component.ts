@@ -3,11 +3,11 @@ import { BookService } from '../services/book.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-result',
-  templateUrl: './result.component.html',
-  styleUrls: ['./result.component.css']
+  selector: 'adz-app-result',
+  templateUrl: './adz-result.component.html',
+  styleUrls: ['./adz-result.component.css']
 })
-export class ResultComponent implements OnInit {
+export class AdzResultComponent implements OnInit {
 
   bookName: string;
 

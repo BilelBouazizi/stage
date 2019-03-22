@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SearchComponent } from './search/search.component';
-import { ResultComponent } from './result/result.component';
+import { AdzSearchComponent } from './adz-search/adz-search.component';
+import { AdzResultComponent } from './adz-result/adz-result.component';
 const routes: Routes = [
   {
     path: "",
-    component: SearchComponent,
+    component: AdzSearchComponent,
   },
   {
     path: "result/:bookname",
-    component: ResultComponent
+    component: AdzResultComponent
   }
 ];
 

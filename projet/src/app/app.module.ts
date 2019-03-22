@@ -5,16 +5,16 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SearchComponent } from './search/search.component';
+import { AdzSearchComponent } from './adz-search/adz-search.component';
 import { BookService } from './services/book.service';
-import { ResultComponent } from './result/result.component';
+import { AdzResultComponent } from './adz-result/adz-result.component';
 import { AdzDisplayComponent } from './adz-display/adz-display.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent,
-    ResultComponent,
+    AdzSearchComponent,
+    AdzResultComponent,
     AdzDisplayComponent
   ],
   imports: [
