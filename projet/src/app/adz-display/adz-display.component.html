@@ -1,15 +1,19 @@
-<div>
+<div class="col-3">
   <h3><span>Title: </span>{{" "}}<span>{{item.volumeInfo.title}}</span></h3>
   <p><span>Published date: </span>{{" "}}<span>{{item.volumeInfo.publishedDate}}</span></p>
   <p><span>Publisher: </span>{{" "}}<span>{{item.volumeInfo.publisher}}</span></p>
-  <p>Authors:</p>
-  <ul>
-    <li *ngFor="let author of item.volumeInfo.authors">{{author}}</li>
-  </ul>
-  <p>Categories:</p>
-  <ul>
-    <li *ngFor="let categorie of item.volumeInfo.categories">{{categorie}}</li>
-  </ul>
+  <div *ngIf="item.volumeInfo.authors != undefined ? item.volumeInfo.authors.length > 0 : false">
+    <p>Authors:</p>
+    <ul>
+      <li>{{item.volumeInfo.authors[0]}}</li>
+    </ul>
+  </div>
+  <div *ngIf="item.volumeInfo.categories.length > 0">
+    <p *ngIf="item.volumeInfo.categories.length > 0">Categories:</p>
+    <ul>
+      <li *ngFor="let categorie of item.volumeInfo.categories">{{categorie}}</li>
+    </ul>
+  </div>
   <p><span>Content version: </span>{{" "}}<span>{{item.volumeInfo.contentVersion}}</span></p>
   <p><a href="{{item.selfLink}}">For more infos</a></p>
 </div>

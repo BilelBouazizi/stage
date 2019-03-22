@@ -1,4 +1,7 @@
-<div>
-    <input type="search" [(ngModel)]="searchTxt" name="search" placeholder="search for books...">
-    <button type="button" [routerLink]="['result', searchTxt]">Search</button>
+<div class="row">
+    <div class="col-12">
+      <h2>Search for books</h2>
+      <p><input type="search" [(ngModel)]="searchTxt" name="search" placeholder="search for books..."></p>
+      <p><button type="button" [routerLink]="['result', searchTxt]">Search</button></p>
+    </div>
 </div>

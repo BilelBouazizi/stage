@@ -1,6 +1,10 @@
-<div>
-  <h2 style="text-align: center"><a routerLink="/">Return to search page</a></h2>
-  <div *ngFor="let item of result.items">
-    <app-adz-display [item]="item"></app-adz-display>
+<div class="row">
+  <div class="row">
+    <div class="col-12">
+      <h2 style="text-align: center"><button routerLink="/">Return to search page</button></h2>
+    </div>
+  </div>
+  <div class="row">
+      <app-adz-display *ngFor="let item of result.items" [item]="item"></app-adz-display>
   </div>
 </div>
